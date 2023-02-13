@@ -42,3 +42,28 @@
       timeBlockEl[i].classlist.add("future");
       }
     }
+
+    function renderUserInput() {
+      for (var i = 0; i < timeBlockEl.length; i++) {
+        var key = timeBlockEl[i].getAtrribute("id");
+        var value = localStorage.getItem(key);
+        timeBlockEl[i].children[1].innerText = value;
+      }
+    }
+
+    function saveUserInput() {
+      var value = $(this).siblings(".description").val();
+      var key = $(this).parent().attr("id");
+      localStorage.setItem(key, value);
+    }
+
+    setInterval(function () {
+      var today = dayjs().format("MMM DD, YYYY [at] hh:mm:ss a")
+      $("#currentDay").text(today);
+    }, 1000);
+
+    $(".saveBtn").on("click", saveUserInput);
+
+    checkTime();
+    renderUserInput();
+    
