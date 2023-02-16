@@ -14,7 +14,6 @@ Work Day Scheduler By Benjamin Jacquez
 - [How To Contribute](#)
 - [License](#)
 
-
 ## Usage
 
 
