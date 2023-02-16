@@ -1,4 +1,4 @@
-// jQuery
+// jQuery / Variables for the page
 var timeBlockEl = $(".time-block");
 var today = dayjs().format("MMM DD, YYYY [at] hh:mm:ss a");
 var currentHour = dayjs().hour();
@@ -10,10 +10,7 @@ for (var i = 0; i < timeBlockEl.length; i++) {
   if (elementID.length === 7)
     hourTimeNumber.push(parseInt(elementID[5] + elementID[6]));
 }
-
-
 // Function to update class time-blocks to based on it being past, present, or future
-
 function checkTime() {
   for (var i = 0; i < hourTimeNumber.length; i++)
     if (hourTimeNumber[i] < currentHour) {
@@ -24,9 +21,7 @@ function checkTime() {
       timeBlockEl[i].classList.add("future");
     }
 }
-
-// FUNCTION TO GET FROM LOCAL STORAGE AND DISPLAY USER INPUT ON TEXTAREA
-
+// This is a function that allows us to store; user inputed text into; local storage so its their when the page is refreshed
 function renderUserInput() {
 
   for (var i = 0; i < timeBlockEl.length; i++) {
@@ -35,23 +30,19 @@ function renderUserInput() {
     timeBlockEl[i].children[1].innerText = value;
   }
 }
-
-// FUNCTION TO SAVE USER INPUT ON TEXTAREA
-
+// This is a function that allows us to store; user inputed text into; local storage so its their when the page is refreshed
 function saveUserInput() {
   var value = $(this).siblings(".description").val();
   var key = $(this).parent().attr("id");
   localStorage.setItem(key, value);
 }
-
-// TIME INTERVAL FUNCTION
-
-
+// Time interval function for api to display on top of page
 setInterval(function () {
   var today = dayjs().format("MMM DD, YYYY [at] hh:mm:ss a");
   $("#currentDay").text(today);
 }, 1000);
 
+// Save on click
 $(".saveBtn").on("click", saveUserInput);
 
 checkTime();
