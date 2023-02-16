@@ -1,6 +1,6 @@
 # Work Day Scheduler
 ## Description
-Work Day Scheduler By Benjamin Jacquez 
+Work day scheduler website by Benjamin Jacquez. A dynamic schedule site allows the user to have an 11 hour long schedule planer. 
 
 ## Deployed Website
 [Deployed Version Here](https://ben-jacquez.github.io/Work-Day-Scheduler/)
@@ -8,17 +8,18 @@ Work Day Scheduler By Benjamin Jacquez
 
 ## Table of Contents
 - [Description](#description)
-- [Deployed Website](#)
-- [Usage](#)
-- [Features](#)
-- [How To Contribute](#)
-- [License](#)
+- [Deployed Website](#deployed-website)
+- [Usage](#usage)
+- [Features](#features)
+- [License](#license)
 
 ## Usage
-Open the deployed website and
+Open the deployed website and see the 11 different hour blocks with colors coordinated to past, present, or future. There is also a calender and clock for reference at the top of the page. User can also leave strings of text inside the blocks and utilize the save button to store text locally so it will remain even after a page reload.
 
 ## Features
-
+- Connected to a 3rd party API which allows for a calender, and clock. Both to display atop the page, and used in the java
+- Save feature which allows user inputed text to store locally and stay after page refresh.
+- The color of the hour block is coordinated to past (grey), curent (red), or future (green)
 
 ## License
 MIT License
