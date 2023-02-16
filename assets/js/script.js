@@ -21,7 +21,7 @@ function checkTime() {
       timeBlockEl[i].classList.add("future");
     }
 }
-// This is a function that allows us to store; user inputed text into; local storage so its their when the page is refreshed
+// Save User Input Function 
 function renderUserInput() {
 
   for (var i = 0; i < timeBlockEl.length; i++) {
@@ -30,7 +30,7 @@ function renderUserInput() {
     timeBlockEl[i].children[1].innerText = value;
   }
 }
-// This is a function that allows us to store; user inputed text into; local storage so its their when the page is refreshed
+// This is the function that allows us to store; user inputed text into; local storage so its their when the page is refreshed
 function saveUserInput() {
   var value = $(this).siblings(".description").val();
   var key = $(this).parent().attr("id");
