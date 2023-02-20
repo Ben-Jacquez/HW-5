@@ -4,14 +4,22 @@ Work day scheduler website by Benjamin Jacquez. A dynamic schedule site allows t
 
 ## Deployed Website
 [Deployed Version Here](https://ben-jacquez.github.io/Work-Day-Scheduler/)
-![Website Screenshot](assets/screenshot.png)
+![Website Screenshot](assets/img/Work-Day-Scheduler-ss.png)
 
 ## Table of Contents
 - [Description](#description)
 - [Deployed Website](#deployed-website)
+- [Technology Used](#technology-used)
 - [Usage](#usage)
 - [Features](#features)
 - [License](#license)
+
+## Technology Used
+- Visual Studio Code
+- HTML
+- CSS & Bootstrap
+- Javascript and Json 
+- API's: Day.js, Google Font, & Font Awesome
 
 ## Usage
 Open the deployed website and see the 11 different hour blocks with colors coordinated to past, present, or future. There is also a calender and clock for reference at the top of the page. User can also leave strings of text inside the blocks and utilize the save button to store text locally so it will remain even after a page reload.
